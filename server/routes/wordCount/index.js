@@ -2,6 +2,6 @@ const express = require('express');
 const router = express.Router();
 const controller = require('./wordCount.controller');
 
-router.get('/:iterations?', controller.getWordCount);
+router.get('/:minIterations?', controller.getWordCount);
 
 module.exports = router;
